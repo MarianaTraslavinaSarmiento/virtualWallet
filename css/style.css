@@ -3,5 +3,55 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "SF-Pro-Text-Regular";
+}
+
+body {
+    width: 100vw;
+    height: 92vh;
+}
+
+header{
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #fff;
+    justify-content: space-between;
+    padding: 5px 15px 5px 15px;
+    font-size: 0.5em
+
+}
+
+
+header a{
+
+    color: var(--color-secundary)
+}
+
+.name{
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    letter-spacing: 3px;
+
+}
+
+.name h1{
+
+    font-family: "SF-Pro-Text-Bold"
+}
+
+header .name a i{
+
+    font-size: 35px
+}
+
+header i{
+    font-size: 35px;
+}
+body{
+
+    height: 92vh;
+    width: 100vw;
 }
