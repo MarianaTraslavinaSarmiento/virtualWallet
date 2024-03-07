@@ -83,6 +83,28 @@ header i{
 
 }
 
+.container{
+
+    height: 42vh;
+}
+
+.buttons{
+
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: 5%;
+
+}
+
+.buttons button{
+
+    width: 23%;
+    border-radius: 20px
+
+}
+
 
 
 
