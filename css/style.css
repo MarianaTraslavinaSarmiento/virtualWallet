@@ -11,7 +11,7 @@ body {
     height: 100vh;
 }
 
-body img:first-child{
+#curva{
 
     width: 100%;
     height: 30%;
@@ -68,7 +68,7 @@ header i{
     font-family:"SF-Pro-Text-Bold";
     border-radius: 100%;
     width: 55vw;
-    height: 58vw;
+    height: 55vw;
     background-color: var(--color-primary);
     display: flex;
     justify-content: center;
@@ -136,6 +136,7 @@ header i{
 .graphic{
 
     height: 28vh;
+    margin-top: 20px;
 }
 
 .graphic, .graphic img{
@@ -148,11 +149,45 @@ header i{
 
 .spendingBox{
 
-    height: 100px;
+    display: flex;
+    gap: 15px;
     font-family: "SF-Pro-Text-Regular";
+    height: 20vh;
+    padding: 20px 15px 40px 15px;
+    background-color: var(--color-spendingBox);
+    align-items: center;
+    position: relative;
+
+
+}
+
+.spendingBox .spendingText{
+
+    height: 80px;
     display: flex;
     flex-direction: column;
 
+}
+
+.spendingBox img{
+
+    width: 35%;
+    
+}
+
+.spendingText small{
+
+    color: var(--color-gray);
+    
+}
+
+.spendingBox img:last-child{
+
+    position: absolute;
+    top: 10px;
+    width: 7vw;
+    right: 10px;
+    
 }
 
 
