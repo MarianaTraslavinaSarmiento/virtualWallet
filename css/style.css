@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     width: 100vw;
     height: 92vh;
@@ -101,10 +102,31 @@ header i{
 .buttons button{
 
     width: 23%;
-    border-radius: 20px
+    border-radius: 20px;
+    border: 2px solid var(--color-secundary);
+    background-color: var(--color-font);
+    font-family: "SF-Pro-Text-Regular";
 
 }
 
+.buttons button:first-child{
 
+    background-color: var(--color-secundary);
+    color: var(--color-font);
 
+}
+
+.buttons button:nth-child(2){
+
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+
+}
+
+.buttons button:last-child{
+
+    color: var(--color-gray);
+    border: 2px solid var(--color-gray)
+
+}
 
