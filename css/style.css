@@ -8,7 +8,7 @@
 
 body {
     width: 100vw;
-    height: 92vh;
+    height: 100vh;
 }
 
 body img:first-child{
@@ -77,6 +77,7 @@ header i{
     position: absolute;
     right: 50%;
     left: 50%;
+    top: -55px;
     transform:translate(-50%, 50%);
     color: var(--color-font);
     font-size: 1.5em;
@@ -86,12 +87,11 @@ header i{
 
 .container{
 
-    height: 42vh;
+    height: 40vh;
 }
 
 .buttons{
 
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -129,4 +129,31 @@ header i{
     border: 2px solid var(--color-gray)
 
 }
+
+/******************** IMAGEN GRAFICA ******************/
+
+.graphic{
+
+    height: 28vh;
+}
+
+.graphic, .graphic img{
+
+    width: 100%;
+    object-fit: contain;
+}
+
+/******************** SPENDING CARD *******************/
+
+.spendingBox{
+
+    height: 100px;
+    font-family: "SF-Pro-Text-Regular";
+    display: flex;
+    flex-direction: column;
+    
+
+
+}
+
 
