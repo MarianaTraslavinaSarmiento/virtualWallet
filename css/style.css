@@ -67,8 +67,8 @@ header i{
 
     font-family:"SF-Pro-Text-Bold";
     border-radius: 100%;
-    width: 220px;
-    height: 220px;
+    width: 55vw;
+    height: 58vw;
     background-color: var(--color-primary);
     display: flex;
     justify-content: center;
@@ -77,7 +77,7 @@ header i{
     position: absolute;
     right: 50%;
     left: 50%;
-    top: -55px;
+    top: -40px;
     transform:translate(-50%, 50%);
     color: var(--color-font);
     font-size: 1.5em;
@@ -102,10 +102,11 @@ header i{
 .buttons button{
 
     width: 23%;
-    border-radius: 20px;
+    border-radius: 25px;
     border: 2px solid var(--color-secundary);
     background-color: var(--color-font);
     font-family: "SF-Pro-Text-Regular";
+    font-size: 1em
 
 }
 
@@ -151,8 +152,6 @@ header i{
     font-family: "SF-Pro-Text-Regular";
     display: flex;
     flex-direction: column;
-    
-
 
 }
 
