@@ -5,3 +5,250 @@
     box-sizing: border-box;
     font-family: "SF-Pro-Text-Regular";
 }
+
+body{
+
+    background-color: var(--color-secundary);
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+#vectores{
+
+    object-fit: contain;
+    z-index: -1;
+    position: absolute;
+    width: 100vw;
+
+}
+header{
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #ffffff00;
+    justify-content: space-between;
+    padding: 5px 15px 5px 15px;
+    font-size: 0.5em;
+}
+
+
+header a{
+
+    color: var(--color-font)
+}
+
+.name{
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    letter-spacing: 2px;
+
+}
+
+.name h1{
+
+    font-family: "SF-Pro-Text-Bold";
+    color: var(--color-font)
+}
+
+header .name a i{
+
+    font-size: 35px
+}
+
+header i{
+    font-size: 35px;
+}
+
+/************************* PRIMERA SECCION ***************/
+
+.titleBalance{
+
+    height: 13vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px 15px 0px 15px;
+    color: var(--color-font);
+
+}
+
+.titleBalance h1{
+
+    font-size: 2em
+}
+.titleBalance p{
+    font-size: 2em
+}
+
+.progress {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: var(--color-font);
+    width: 100%;
+    padding: 15px;
+    gap: 50px
+    
+}
+
+.savings, .assets {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    font-family: "SF-Pro-Text-Regular";
+}
+
+
+
+
+.savings b, .assets b {
+    font-size: 1.5em;
+}
+
+.savings small, .assets small {
+    font-family: "SF-Pro-Text-Regular"
+}
+
+.barra {
+    margin-top: 5px;
+    height: 8px;
+    border-radius: 10px;
+    background-color: #ffff;
+}
+
+.barraSavings {
+    border-radius: 10px;
+    height: 100%;
+    width: 80%;
+    background-color: var(--color-primary);
+}
+
+.barraAssets {
+    border-radius: 10px;
+    height: 100%;
+    width: 40%;
+    background-color: var(--color-gray);
+}
+
+.activities__transactions{
+
+    width: 100%;
+    height: 65vh;
+    background-color: var(--color-font);
+    border-radius: 50px 50px 0px 0px
+
+}
+
+
+.iconGallery p{
+
+    margin-top: 25px;
+    padding: 30px 15px 0px 15px;
+    font-size: 1.5em;
+    font-family: "SF-Pro-Text-Bold";
+
+}
+
+.items{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    height: 20vh;
+    gap: 10px;
+    padding: 15px
+    
+}
+
+.item{
+
+    border-radius: 20px;
+    background-color: var(--color-font);
+    box-shadow: 0px 0px 5px var(--color-gray);
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+
+.item b{
+
+    margin-top: 10px
+}
+
+/************************* SEGUNDA SECCION ***************/
+
+.transactions{
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr ;
+
+    width: 100vw;
+    height: 25vh;
+    
+}
+
+.transactions p{
+
+    padding: 5px 15px 5px 15px;
+    font-size: 1.5em;
+    font-family: "SF-Pro-Text-Bold";
+
+}
+
+.boxTransactions{
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    overflow: scroll;
+    height: 25vh;
+
+}
+
+.transaction{
+
+    display: flex;
+    padding: 5px;
+    margin-bottom: 15px;
+
+
+}
+
+.transaction img{
+
+    width: 15%;
+
+}
+.name__Of__Transaction{
+
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    padding: 5px;
+    
+}
+
+.name__Of__Transaction b, .value__Of__Transaction b{
+
+    font-size: 1.2em;
+}
+
+.name__Of__Transaction small, .value__Of__Transaction small{
+
+    color: var(--color-gray)
+}
+
+.value__Of__Transaction{
+
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    justify-content: center;
+    padding: 5px;
+    align-items: flex-end;
+
+}
