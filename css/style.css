@@ -9,7 +9,7 @@
 body{
 
     background-color: var(--color-secundary);
-    height: 100vh;
+    height: 130vh;
     width: 100vw;
 }
 
@@ -104,8 +104,6 @@ header i{
 }
 
 
-
-
 .savings b, .assets b {
     font-size: 1.5em;
 }
@@ -138,9 +136,9 @@ header i{
 .activities__transactions{
 
     width: 100%;
-    height: 65vh;
+    height: 100vh;
     background-color: var(--color-font);
-    border-radius: 50px 50px 0px 0px
+    border-radius: 30px 30px 0px 0px;
 
 }
 
@@ -184,8 +182,7 @@ header i{
 .transactions{
 
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr ;
-
+    grid-template-rows: 45px 1fr 1fr ;
     width: 100vw;
     height: 25vh;
     
@@ -193,9 +190,10 @@ header i{
 
 .transactions p{
 
-    padding: 5px 15px 5px 15px;
+    padding: 5px 15px 10px 15px;
     font-size: 1.5em;
     font-family: "SF-Pro-Text-Bold";
+
 
 }
 
@@ -204,7 +202,8 @@ header i{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     overflow: scroll;
-    height: 25vh;
+    height: 600%;
+    
 
 }
 
@@ -212,7 +211,7 @@ header i{
 
     display: flex;
     padding: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 
 
 }
@@ -234,7 +233,7 @@ header i{
 
 .name__Of__Transaction b, .value__Of__Transaction b{
 
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .name__Of__Transaction small, .value__Of__Transaction small{
