@@ -9,7 +9,7 @@
 
 .menu{
 
-    background-color: var(--color-background);
+    background-color: var(--color-primary);
     position: fixed;
     bottom: 0;
     
@@ -42,6 +42,6 @@
 }
 
 .menu ul li i:hover {
-    color: var(--color-primary);
+    color: var(--color-semantic);
     transition: 0.3s ease-in-out;
 }
