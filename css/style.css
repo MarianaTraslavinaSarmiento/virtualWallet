@@ -9,7 +9,7 @@
 
 .menu{
 
-    background-color: var(--color-secundary);
+    background-color: var(--color-background);
     position: fixed;
     bottom: 0;
     
@@ -19,7 +19,7 @@
 
     display: flex;
     width: 100vw;
-    height: 70px;
+    height: 60px;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -39,4 +39,9 @@
     font-size: 30px;
     display: flex;
 
+}
+
+.menu ul li i:hover {
+    color: var(--color-primary);
+    transition: 0.3s ease-in-out;
 }
