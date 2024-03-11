@@ -136,7 +136,7 @@ header i{
 
 /******************** IMAGEN GRAFICA ******************/
 
-.graphic{
+.circleGraphic{
 
     height: 28vh;
     margin: 10px;
@@ -146,9 +146,9 @@ header i{
     
 }
 
-.graphic, .graphic img{
+.circleGraphic, .circleGraphic img{
 
-    width: 92%;
+    width: 95%;
     object-fit: contain;
 }
 
