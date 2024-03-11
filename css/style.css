@@ -3,5 +3,670 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "SF-Pro-Text-Regular";
+    font-family: "Font-Recursive-Bold";
+    text-decoration: none;
+}
+body, html{
+
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: var(--color-primary);
+    z-index:-1
+
+}
+
+.menu{
+
+    background-color: var(--color-primary);
+    position: fixed;
+    bottom: 0;
+    
+}
+
+.menu ul{
+
+    display: flex;
+    width: 100vw;
+    height: 60px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.menu ul li{
+
+    list-style: none;
+    
+
+}
+
+.menu i{
+
+    color: var(--color-font);
+    font-size: 30px;
+    display: flex;
+
+}
+
+.menu ul li i:hover {
+    color: var(--color-semantic);
+    transition: 0.3s ease-in-out;
+}
+
+header{
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #02020100;
+    justify-content: space-between;
+    padding: 5px 15px 5px 15px;
+    font-size: 0.7em;
+    height: 50px;
+    z-index: 1;
+    position: relative;
+
+
+}
+
+
+header a{
+
+    color: var(--color-primary)
+}
+
+.name{
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    letter-spacing: 2px;
+
+
+}
+
+.name h1{
+
+    font-family: "Font-Recursive-Bold";
+    color: var(--color-semantic)
+}
+
+header .name a i{
+
+    font-size: 35px;
+    color: var(--color-semantic)
+
+}
+
+header i{
+    font-size: 35px;
+    color: var(--color-semantic)
+
+}
+
+    
+.contenedor{
+
+    width: 100%;
+    height: 85vh;
+    /* border: 1px solid black; */
+}
+
+/************ CARD_1 ************/
+
+.tips{
+
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 0px 20px;
+    gap: 10px;
+    margin-top: 20px;
+
+}
+
+.tipsCarrusel{
+
+    display: grid;
+    grid-template-columns: repeat(3, 85vw);
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap: 15px;
+    align-items: center;
+    width: 100%;
+
+}
+
+.tipsbox{
+
+    display: flex;
+    background-color: var(--color-primary);
+    border-radius: 20px;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    position: relative;
+    height: 95%;
+    justify-content: center;
+    border: 2px solid var(--color-font);
+    box-shadow: 0px 0px 8px var(--color-font);
+    margin: 8px
+
+
+}
+
+.tipsbox img{
+
+    height: 100%;
+    width: 45%;
+    border-radius: 20px;
+    display: flex;
+    margin-left: 5px
+
+}
+
+.tipsbox img:nth-child(2){
+
+    width: 8%;
+    position: absolute;
+    bottom: 57px;
+    right: 10px;
+
+}
+
+.text{
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 45%;
+
+}
+
+.text button{
+
+    height: 30px;
+    width: 80%;
+    border-radius: 20px;
+    border: linear-gradient(to bottom, #BC9026, #F3BA2F, #AE8522);
+    background: linear-gradient(to bottom, #BC9026, #F3BA2F, #AE8522);
+    color: var(--color-icons);
+    font-family: "Font-Recursive-Regular";
+    font-size: 0.8em;
+
+
+}
+
+.tips h3{
+
+    font-size: 1.5em;
+    color: var(--color-font)
+    
+
+}
+.text b{
+
+    font-size: 1.1em;
+    color: var(--color-semantic);
+}
+
+.text p{
+
+    font-size: 0.9em;
+    color: var(--color-font);
+    font-family: "Font-Recursive-Regular";
+}
+
+/************ CARRUSEL ***************/
+
+.myCards {
+    height: 70%;
+    margin-left: 25px;
+
+}
+.myCards h1{
+
+    margin-top: 20px;
+    color: var(--color-font)
+}
+
+.carrusel{
+
+    height: 80%;
+    display: flex;
+    overflow: scroll;
+    margin-top: 20px
+}
+
+.element1, .element2{
+
+    flex: 1 0 auto;
+    margin-right: 17px;
+    width: 250px;
+    height: 100%;
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat ;
+    position: relative;
+}
+
+.element1{
+
+    background-image: url(../storage/img/card1.svg);
+
+}
+
+.element2{
+
+    background-image: url(../storage/img/card2.svg);
+}
+
+.element1 small{
+
+    position: absolute;
+    right: 25px;
+    top: 28px;
+    color: var(--color-font);
+
+}
+
+.element1 b{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-font);
+    font-size: 2.5em;
+    text-shadow: 0px 0px 5px var(--color-font);
+    text-align: center;
+
+}
+
+.element1 img{
+
+    position: absolute;
+    bottom: 20px;
+    width: 20%;
+    left: 20px
+
+}
+
+.element2 small{
+
+    position: absolute;
+    right: 25px;
+    top: 28px;
+    color: var(--color-font);
+
+}
+
+.element2 b{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-font);
+    font-size: 2.5em;
+    text-shadow: 0px 5px 10px var(--color-primary);
+
+}
+
+.element2 img{
+
+    position: absolute;
+    bottom: 20px;
+    width: 25%;
+    left: 20px
+
+}
+
+.myCards span{
+
+    color: var(--color-semantic)
+}
+
+
+/* Balance */
+
+#dollarBackground{
+
+    width: 100vw;
+    height: 28%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.circle{
+
+    font-family:"Font-Recursive-Regular";
+    width: 60vw;
+    height: 55vw;
+    border-radius: 20px;
+    background-color: var(--color-primary);
+    text-shadow: 0px 0px 5px var(--color-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    top: -40px;
+    transform:translate(-50%, 50%);
+    color: var(--color-font);
+    font-size: 1.7em;
+    gap:5px;
+    border: 3px solid var(--color-semantic);
+    box-shadow: 0px 0px 10px var(--color-semantic);
+
+}
+
+.container{
+
+    height: 40%;
+}
+
+.buttons{
+
+    display: flex;
+    justify-content: center;
+    height: 5%;
+
+}
+
+.buttons button{
+
+    width: 33.3%;
+    background-color: var(--color-semantic);
+    font-family: "Font-Recursive-Regular";
+    font-size: 1.1em;
+    border: 2px solid var(--color-primary)
+
+}
+
+
+.buttons button:hover{
+    background-color: var(--color-font);
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary)
+
+}
+
+
+/******************** IMAGEN GRAFICA ******************/
+
+.circleGraphic{
+
+    height: 28vh;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.circleGraphic, .circleGraphic img{
+
+    width: 95%;
+    object-fit: contain;
+}
+
+/******************** SPENDING CARD *******************/
+
+.spendingBox{
+
+    display: flex;
+    font-family: "Font-Recursive-Regular";
+    height: 18vh;
+    background-color: var(--color-spendingBox);
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--color-semantic);
+    background-color: var(--color-semantic);
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px var(--color-semantic);
+
+}
+
+.subSpending{
+
+    border: 2px solid var(--color-primary);
+    background-color: var(--color-primary);
+    width: 90vw;
+    border-radius: 20px;
+    height: 10vh;
+    padding: 15px;
+    justify-content: space-between;
+    display: flex;
+    color: var(--color-font);
+    font-size: 0.9em;
+
+}
+
+.spendingBox h3{
+
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.spendingBox p:last-child{
+
+    display: flex;
+    justify-self: flex-end;
+}
+
+.marrano img{
+
+    height: 140%;
+    object-fit: contain;
+    object-position: center
+}
+
+.marrano{
+
+    height: 80%;
+
+}
+
+/* Profile */
+
+#vectores{
+
+    object-fit: contain;
+    position: absolute;
+    width: 100vw;
+
+}
+
+.titleBalance{
+
+    height: 13vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px 15px 0px 15px;
+    color: var(--color-font);
+
+}
+
+.titleBalance h1{
+
+    font-size: 2em
+}
+.titleBalance p{
+    font-size: 2em
+}
+
+.progress {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: var(--color-font);
+    width: 100%;
+    padding: 15px;
+    gap: 50px
+    
+}
+
+.savings, .assets {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    font-family: "Font-Recursive-Regular";
+}
+
+
+.savings b, .assets b {
+    font-size: 1.5em;
+}
+
+.savings small, .assets small {
+    font-family: "Font-Recursive-Regular"
+}
+
+.barra {
+    margin-top: 5px;
+    height: 8px;
+    border-radius: 10px;
+    background-color: #ffff;
+}
+
+.barraSavings {
+    border-radius: 10px;
+    height: 100%;
+    width: 80%;
+    background-color: var(--color-semantic);
+}
+
+.barraAssets {
+    border-radius: 10px;
+    height: 100%;
+    width: 40%;
+    background-color: var(--color-secundary);
+}
+
+.activities__transactions{
+
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-font);
+    border-radius: 30px 30px 0px 0px;
+
+}
+
+
+.iconGallery p{
+
+    margin-top: 25px;
+    padding: 30px 15px 0px 15px;
+    font-size: 1.5em;
+    font-family: "Font-Recursive-Bold";
+
+}
+
+.items{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    height: 20vh;
+    gap: 10px;
+    padding: 15px
+    
+}
+
+.item{
+
+    border-radius: 20px;
+    background-color: var(--color-font);
+    box-shadow: 0px 0px 5px var(--color-gray);
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+
+.item b{
+
+    margin-top: 10px
+}
+
+/************************* SEGUNDA SECCION ***************/
+
+.transactions{
+
+    display: grid;
+    grid-template-rows: 45px 1fr 1fr ;
+    width: 100vw;
+    height: 25vh;
+    
+}
+
+.transactions p{
+
+    padding: 5px 15px 10px 15px;
+    font-size: 1.5em;
+    font-family: "Font-Recursive-Bold";
+
+
+}
+
+.boxTransactions{
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    overflow: scroll;
+    height: 600%;
+    
+
+}
+
+.transaction{
+
+    display: flex;
+    padding: 5px;
+    margin-bottom: 10px;
+
+
+}
+
+.transaction img{
+
+    width: 15%;
+
+}
+.name__Of__Transaction{
+
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    padding: 5px;
+    
+}
+
+.name__Of__Transaction b, .value__Of__Transaction b{
+
+    font-size: 1.1em;
+}
+
+.name__Of__Transaction small, .value__Of__Transaction small{
+
+    color: var(--color-gray)
+}
+
+.value__Of__Transaction{
+
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    justify-content: center;
+    padding: 5px;
+    align-items: flex-end;
+
 }
