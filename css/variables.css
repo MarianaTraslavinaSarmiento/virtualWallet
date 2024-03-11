@@ -1,10 +1,8 @@
-@font-face {
-    font-family: "SF-Pro-Text-Regular";
-    src: url(../storage/font/SF-Pro-Text-Font-Family/SF-Pro-Text-Regular.otf);
-}
-:root{
-    --color-primary: #121649;
-    --color-semantic: #FF2D55;
-    --color-icons: #ffffff;
-}
 
+:root{
+    --color-primary:#020201;
+    --color-semantic: #dfb022;
+    --color-font: #e3e8ec;
+    --color-purple: #5655B9;
+
+}
