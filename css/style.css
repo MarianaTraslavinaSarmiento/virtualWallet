@@ -3,22 +3,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 
 body, html {
     width: 100vw;
     height: 100vh;
+    background-color: var(--color-primary);
+    z-index:-1
+
     
 }
 
 #dollarBackground{
 
     width: 100vw;
-    height: 25%;
+    height: 28%;
     object-fit: cover;
     position: absolute;
-    z-index: -1;
 
 
 }
@@ -28,18 +31,21 @@ header{
     display: flex;
     flex-direction: row;
     width: 100%;
-    background-color: #ffffff00;
+    background-color: #02020100;
     justify-content: space-between;
     padding: 5px 15px 5px 15px;
-    font-size: 0.5em;
-    position: absolute;
+    font-size: 0.7em;
+    height: 50px;
+    z-index: 1;
+    position: relative;
+
 
 }
 
 
 header a{
 
-    color: var(--color-font)
+    color: var(--color-primary)
 }
 
 .name{
@@ -49,31 +55,36 @@ header a{
     gap: 5px;
     letter-spacing: 2px;
 
+
 }
 
 .name h1{
 
-    font-family: "SF-Pro-Text-Bold";
-    color: var(--color-font)
+    font-family: "Font-Recursive-Bold";
+    color: var(--color-semantic)
 }
 
 header .name a i{
 
-    font-size: 35px
+    font-size: 35px;
+    color: var(--color-semantic)
+
 }
 
 header i{
     font-size: 35px;
+    color: var(--color-semantic)
+
 }
 
 .circle{
 
-    font-family:"SF-Pro-Text-Bold";
+    font-family:"Font-Recursive-Regular";
     width: 60vw;
     height: 55vw;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px #f84b4b00;
     background-color: var(--color-primary);
+    text-shadow: 0px 0px 5px var(--color-font);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,8 +95,10 @@ header i{
     top: -40px;
     transform:translate(-50%, 50%);
     color: var(--color-font);
-    font-size: 1.5em;
+    font-size: 1.7em;
     gap:5px;
+    border: 3px solid var(--color-semantic);
+    box-shadow: 0px 0px 10px var(--color-semantic);
 
 }
 
@@ -105,33 +118,21 @@ header i{
 .buttons button{
 
     width: 33.3%;
-    border: 2px solid var(--color-secundary);
+    background-color: var(--color-semantic);
+    font-family: "Font-Recursive-Regular";
+    font-size: 1.1em;
+    border: 2px solid var(--color-primary)
+
+}
+
+
+.buttons button:hover{
     background-color: var(--color-font);
-    font-family: "SF-Pro-Text-Regular";
-    font-size: 1em
-
-}
-
-.buttons button:first-child{
-
-    background-color: var(--color-secundary);
-    color: var(--color-font);
-
-}
-
-.buttons button:nth-child(2){
-
     color: var(--color-primary);
-    border: 2px solid var(--color-primary);
+    border: 2px solid var(--color-primary)
 
 }
 
-.buttons button:last-child{
-
-    color: var(--color-gray);
-    border: 2px solid var(--color-gray)
-
-}
 
 /******************** IMAGEN GRAFICA ******************/
 
@@ -156,25 +157,31 @@ header i{
 .spendingBox{
 
     display: flex;
-    font-family: "SF-Pro-Text-Regular";
-    height: 17vh;
+    font-family: "Font-Recursive-Regular";
+    height: 18vh;
     background-color: var(--color-spendingBox);
     align-items: center;
     justify-content: center;
     align-items: center;
+    border: 2px solid var(--color-semantic);
+    background-color: var(--color-semantic);
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px var(--color-semantic);
 
 }
 
 .subSpending{
 
-    border: 1px solid black;
+    border: 2px solid var(--color-primary);
+    background-color: var(--color-primary);
     width: 90vw;
     border-radius: 20px;
-    height: 12vh;
+    height: 10vh;
     padding: 15px;
-    gap: 5px;
+    justify-content: space-between;
     display: flex;
-    flex-direction: column;
+    color: var(--color-font);
+    font-size: 0.9em;
 
 }
 
@@ -193,33 +200,56 @@ header i{
 }
 
 
-/* .spendingBox .spendingText{
+.menu{
 
-    height: 80px;
+    background-color: var(--color-primary);
+    position: fixed;
+    bottom: 0;
+    
+    
+}
+
+.menu ul{
+
     display: flex;
-    flex-direction: column;
+    width: 100vw;
+    height: 60px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
 
 }
 
-.spendingBox img{
+.menu ul li{
 
-    width: 35%;
+    list-style: none;
     
 }
 
-.spendingText small{
+.menu i{
 
-    color: var(--color-gray);
-    
+    color: var(--color-font);
+    font-size: 30px;
+    display: flex;
+
 }
 
-.spendingBox img:last-child{
+.menu ul li i:hover {
+    color: var(--color-semantic);
+    transition: 0.3s ease-in-out;
+}
 
-    position: absolute;
-    top: 10px;
-    width: 7vw;
-    right: 10px;
-    
-} */
+.marrano img{
 
+    height: 140%;
+    object-fit: contain;
+    object-position: center
+}
+
+.marrano{
+
+    height: 80%;
+
+}
 
