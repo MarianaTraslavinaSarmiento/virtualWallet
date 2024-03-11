@@ -59,7 +59,7 @@ header{
     display: flex;
     flex-direction: row;
     width: 100%;
-    background-color: (--color-primary);
+    background-color: var(--color-primary);
     justify-content: space-between;
     padding: 5px 15px 5px 15px;
     font-size: 0.7em;
