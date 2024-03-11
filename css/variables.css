@@ -1,14 +1,18 @@
 @font-face {
-    font-family: "SF-Pro-Text-Regular";
-    src: url(../storage/fonts/SF-Pro-Text-Font-Family/SF-Pro-Text-Regular.otf);
+    font-family: "Font-Recursive-Bold";
+    src: url(../storage/fonts/BellotaFont/Recursive/Recursive-Bold.ttf);
 }
 
 @font-face {
-    font-family: "SF-Pro-Text-Bold";
-    src: url(../storage/fonts/SF-Pro-Text-Font-Family/SF-Pro-Text-Bold.otf);
+    font-family: "Font-Recursive-Regular";
+    src: url(../storage/fonts/BellotaFont/Recursive/Recursive-Regular.ttf);
 }
+
 :root{
-    --color-primary: #00DDA3;
-    --color-secundary: #33404F;
-    --color-font: #ffffff;
+    --color-primary:#020201;
+    --color-semantic: #dfb022;
+    --color-font: #e3e8ec;
+    --color-purple: #5655B9;
+
+
 }
