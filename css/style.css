@@ -3,12 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "SF-Pro-Text-Regular";
+    font-family: "Font-Recursive-Regular";
+    text-decoration: none;
 }
 
 body{
 
-    background-color: var(--color-secundary);
+    background-color: var(--color-primary);
     height: 130vh;
     width: 100vw;
 }
@@ -23,21 +24,24 @@ body{
     width: 100vw;
 
 }
+
+
 header{
 
     display: flex;
     flex-direction: row;
     width: 100%;
-    background-color: #ffffff00;
     justify-content: space-between;
     padding: 5px 15px 5px 15px;
-    font-size: 0.5em;
+    font-size: 0.7em;
+    height: 50px;
+
 }
 
 
 header a{
 
-    color: var(--color-font)
+    color: var(--color-primary)
 }
 
 .name{
@@ -47,22 +51,28 @@ header a{
     gap: 5px;
     letter-spacing: 2px;
 
+
 }
 
 .name h1{
 
-    font-family: "SF-Pro-Text-Bold";
-    color: var(--color-font)
+    font-family: "Font-Recursive-Bold";
+    color: var(--color-semantic)
 }
 
 header .name a i{
 
-    font-size: 35px
+    font-size: 35px;
+    color: var(--color-semantic)
+
 }
 
 header i{
     font-size: 35px;
+    color: var(--color-semantic)
+
 }
+
 
 /************************* PRIMERA SECCION ***************/
 
@@ -100,7 +110,7 @@ header i{
     display: flex;
     flex-direction: column;
     gap: 3px;
-    font-family: "SF-Pro-Text-Regular";
+    font-family: "Font-Recursive-Regular";
 }
 
 
@@ -109,7 +119,7 @@ header i{
 }
 
 .savings small, .assets small {
-    font-family: "SF-Pro-Text-Regular"
+    font-family: "Font-Recursive-Regular"
 }
 
 .barra {
@@ -123,14 +133,14 @@ header i{
     border-radius: 10px;
     height: 100%;
     width: 80%;
-    background-color: var(--color-primary);
+    background-color: var(--color-semantic);
 }
 
 .barraAssets {
     border-radius: 10px;
     height: 100%;
     width: 40%;
-    background-color: var(--color-gray);
+    background-color: var(--color-secundary);
 }
 
 .activities__transactions{
@@ -148,7 +158,7 @@ header i{
     margin-top: 25px;
     padding: 30px 15px 0px 15px;
     font-size: 1.5em;
-    font-family: "SF-Pro-Text-Bold";
+    font-family: "Font-Recursive-Bold";
 
 }
 
@@ -192,7 +202,7 @@ header i{
 
     padding: 5px 15px 10px 15px;
     font-size: 1.5em;
-    font-family: "SF-Pro-Text-Bold";
+    font-family: "Font-Recursive-Bold";
 
 
 }
@@ -250,4 +260,43 @@ header i{
     padding: 5px;
     align-items: flex-end;
 
+}
+
+.menu{
+
+    background-color: var(--color-primary);
+    position: fixed;
+    bottom: 0;
+    
+}
+
+.menu ul{
+
+    display: flex;
+    width: 100vw;
+    height: 60px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.menu ul li{
+
+    list-style: none;
+    
+
+}
+
+.menu i{
+
+    color: var(--color-font);
+    font-size: 30px;
+    display: flex;
+
+}
+
+.menu ul li i:hover {
+    color: var(--color-semantic);
+    transition: 0.3s ease-in-out;
 }
